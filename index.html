@@ -47,6 +47,7 @@
                             <dt>JSON</dt>
                             <dd>Formato de intercambio de datos ligero y fácil de leer.</dd>
                         </dl>
+                
                 <h3>Enlaces</h3>
                     <p>
                         Visita la página de la 
@@ -59,6 +60,7 @@
                     <p>
                         Ir directamente a la sección de <a href="#vehiculos">Vehículos</a>.
                     </p>
+
                 <h3>Imágenes</h3>
                     <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla6.png" 
                     alt="Vehículo eléctrico Tesla" width="600">
@@ -70,7 +72,81 @@
                         width="150">
                     </a>
 
-                <p>Todos los derechos reservados &copy; 2025.</p>
-    </body>
-        
+                <section id = "vehiculos">
+                    <h3>Tabla de vehículos disponibles</h3>
+                        <table border="1">
+                            <caption>Vehículos disponibles</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Matrícula</th>
+                                    <th scope="col">Marca</th>
+                                    <th scope="col">Autonomía (km)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1234-ABC</td>
+                                    <td>Tesla 1</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>5678-DEF</td>
+                                    <td>Tesla 2</td>
+                                    <td>270</td>
+                                </tr>
+                                <tr>
+                                    <td>9101-GHI</td>
+                                    <td>Tesla 3</td>
+                                    <td>416</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+
+        <section id="reservas"> 
+            <h3>Formulario de reserva</h3>
+                        <form>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" required><br><br>
+                            <label for="email"></label>Email:</label>
+                            <input type="email" name="correo" id="email" required><br><br>
+                            <label for="vehiculos">Vehículos disponibles:</label>
+                            <select name="vehiculos" id="vehiculos" required>
+                                <option value="tesla1">Tesla</option>
+                                <option value="tesla2">Mercedes</option>
+                                <option value="tesla3">BMW</option>
+                            </select><br><br>
+                            <label for="fecha_inicio">Fecha inicio:</label>
+                            <input type="date" name="fecha_inicio" id="fecha_inicio" required><br><br>
+                            <label for="hora_inicio">Hora inicio:</label>
+                            <input type="time" name="hora_inicio" id="hora_inicio" required><br><br>
+                            <label for="fecha_fin">Fecha fin:</label>
+                            <input type="date" name="fecha_fin" id="fecha_fin" required><br><br>
+                            <label for="hora_fin">Hora fin:</label>
+                            <input type="time" name="hora_fin" id="hora_fin" required><br><br>
+                            <label for="condiciones">Acepto condiciones:</label>
+                            <input type="checkbox" name="condiciones" id="condiciones" required><br><br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </form>
+
+        </section>
+
+        <h2>Iframe</h2>
+
+            <iframe src="https://www.youtube.com/watch?v=FG3zkj6OEEo" 
+                    name="iframe_a" 
+                    height="400" 
+                    width="800" 
+                    title="ejemplo Iframe">
+            </iframe>
+
+            <p>
+            <a href="https://ucm.es" target="iframe_a">Web UCM</a>
+            </p>
+
+        <footer>
+            <p>Todos los derechos reservados &copy; 2025.</p>
+        </footer>
+    </body>     
 </html>
