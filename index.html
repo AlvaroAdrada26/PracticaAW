@@ -1,152 +1,207 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gestión de Flota de Vehículos Eléctricos</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Flota de Vehículos Eléctricos</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
         <h1>Gestión de Flota de Vehículos Eléctricos</h1>
-            <h2>Plataforma de movilidad sostenible</h2>
-            <p>
-                Bienvenido a la <strong>plataforma de gestión de flotas de vehículos eléctricos</strong>, 
-                una solución diseñada para modernizar la movilidad en las empresas y hacerla más eficiente.
-            </p>
-            <p>
-                Gracias a esta aplicación, los empleados pueden <em>consultar la disponibilidad de vehículos</em>, 
-                realizar reservas rápidas con fecha y hora, y acceder fácilmente a su histórico de viajes.
-            </p>
-            <p>
-                Los administradores disponen de herramientas para la <strong>gestión de concesionarios, usuarios y vehículos</strong>, 
-                así como estadísticas de uso que ayudan a tomar mejores decisiones.
-            </p>
-            <p>
-                Nuestro compromiso es fomentar el uso de <strong>energías limpias</strong> y ofrecer una experiencia accesible, 
-                adaptada a las necesidades de todos los usuarios mediante opciones de contraste, tamaño de letra y atajos de teclado.
-            </p>
-            <p>El precio de la suscripción a esta web es de 10&euro; mensuales.</p>
-                <h3>Listas</h3>
-                    <h4>Beneficios de los vehículos eléctricos</h4>
-                        <ol>
-                            <li>Reducción de emisiones contaminantes</li>
-                            <li>Ahorro en costes de combustible</li>
-                            <li>Menor ruido ambiental</li>
-                        </ol>
-                    <h4>Servicios principales de la plataforma</h4>
-                        <ul>
-                            <li>Reserva de vehículos</li>
-                            <li>Gestión de concesionarios</li>
-                            <li>Estadísticas de uso</li>
-                        </ul>
-                    <h4>Términos clave</h4>
-                        <dl>
-                            <dt>HTML</dt>
-                            <dd>Lenguaje de marcado para estructurar páginas web.</dd>
-                            <dt>CSS</dt>
-                            <dd>Lenguaje de estilos que define la apariencia del contenido.</dd>
-                            <dt>JSON</dt>
-                            <dd>Formato de intercambio de datos ligero y fácil de leer.</dd>
-                        </dl>
-                
-                <h3>Enlaces</h3>
-                    <p>
-                        Visita la página de la 
-                        <a href="https://www.ucm.es" target="_blank">Universidad Complutense de Madrid</a>.
-                    </p>
-                    <p>
-                        Ir a la página de 
-                        <a href="contacto.html">Contacto</a>.
-                    </p>
-                    <p>
-                        Ir directamente a la sección de <a href="#vehiculos">Vehículos</a>.
-                    </p>
+        <h2>Plataforma de movilidad sostenible</h2>
 
-                <h3>Imágenes</h3>
-                    <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla6.png" 
-                    alt="Vehículo eléctrico Tesla" width="600">
-                    <p>Miniatura:</p>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-label="Ir a inicio">Inicio</a></li>
+                <li><a href="#vehiculos" aria-label="Ir a la sección de vehículos">Vehículos</a></li>
+                <li><a href="#reservas" aria-label="Ir a la sección de reservas">Reservas</a></li>
+                <li><a href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                    <a href="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" target="_blank">
-                    <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" 
-                        alt="Vehículo Tesla" 
-                        width="150">
-                    </a>
-
-                <section id = "vehiculos">
-                    <h3>Tabla de vehículos disponibles</h3>
-                        <table border="1">
-                            <caption>Vehículos disponibles</caption>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Matrícula</th>
-                                    <th scope="col">Marca</th>
-                                    <th scope="col">Autonomía (km)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1234-ABC</td>
-                                    <td>Tesla 1</td>
-                                    <td>500</td>
-                                </tr>
-                                <tr>
-                                    <td>5678-DEF</td>
-                                    <td>Tesla 2</td>
-                                    <td>270</td>
-                                </tr>
-                                <tr>
-                                    <td>9101-GHI</td>
-                                    <td>Tesla 3</td>
-                                    <td>416</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </section>
-
-        <section id="reservas"> 
-            <h3>Formulario de reserva</h3>
-                        <form>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" required><br><br>
-                            <label for="email"></label>Email:</label>
-                            <input type="email" name="correo" id="email" required><br><br>
-                            <label for="vehiculos">Vehículos disponibles:</label>
-                            <select name="vehiculos" id="vehiculos" required>
-                                <option value="tesla1">Tesla</option>
-                                <option value="tesla2">Mercedes</option>
-                                <option value="tesla3">BMW</option>
-                            </select><br><br>
-                            <label for="fecha_inicio">Fecha inicio:</label>
-                            <input type="date" name="fecha_inicio" id="fecha_inicio" required><br><br>
-                            <label for="hora_inicio">Hora inicio:</label>
-                            <input type="time" name="hora_inicio" id="hora_inicio" required><br><br>
-                            <label for="fecha_fin">Fecha fin:</label>
-                            <input type="date" name="fecha_fin" id="fecha_fin" required><br><br>
-                            <label for="hora_fin">Hora fin:</label>
-                            <input type="time" name="hora_fin" id="hora_fin" required><br><br>
-                            <label for="condiciones">Acepto condiciones:</label>
-                            <input type="checkbox" name="condiciones" id="condiciones" required><br><br>
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Limpiar">
-                        </form>
-
+    <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section>
+            <h3>Introducción</h3>
+                <p>
+                    Bienvenido a la <strong>plataforma de gestión de flotas de vehículos eléctricos</strong>, 
+                    una solución diseñada para modernizar la movilidad en las empresas y hacerla más eficiente.
+                </p>
+                <p>
+                    Gracias a esta aplicación, los empleados pueden <em>consultar la disponibilidad de vehículos</em>, 
+                    realizar reservas rápidas con fecha y hora, y acceder fácilmente a su histórico de viajes.
+                </p>
+                <p>
+                    Los administradores disponen de herramientas para la <strong>gestión de concesionarios, usuarios y vehículos</strong>, 
+                    así como estadísticas de uso que ayudan a tomar mejores decisiones.
+                </p>
+                <p>
+                    Nuestro compromiso es fomentar el uso de <strong>energías limpias</strong> y ofrecer una experiencia accesible, 
+                    adaptada a las necesidades de todos los usuarios mediante opciones de contraste, tamaño de letra y atajos de teclado.
+                </p>
+                <p>El precio de la suscripción a esta web es de 10&euro; mensuales.</p>
+                <p>
+                    Nota: este proyecto forma parte de un trabajo académico.  
+                    <span lang="en">This platform is an academic project for educational purposes only.</span>
+                </p>
         </section>
 
-        <h2>Iframe</h2>
+        <!-- Listas -->
+        <section>
+            <h3>Listas</h3>
+            <h4>Beneficios de los vehículos eléctricos</h4>
+            <ol>
+                <li>Reducción de emisiones contaminantes</li>
+                <li>Ahorro en costes de combustible</li>
+                <li>Menor ruido ambiental</li>
+            </ol>
+            <h4>Servicios principales de la plataforma</h4>
+            <ul>
+                <li>Reserva de vehículos</li>
+                <li>Gestión de concesionarios</li>
+                <li>Estadísticas de uso</li>
+            </ul>
+            <h4>Términos clave</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos que define la apariencia del contenido.</dd>
+                <dt>JSON</dt>
+                <dd>Formato de intercambio de datos ligero y fácil de leer.</dd>
+            </dl>
+        </section>
 
+        <!-- Enlaces -->
+        <section>
+            <h3>Enlaces</h3>
+            <p>
+                Visita la página de la 
+                <a href="https://www.ucm.es" target="_blank" aria-label="Abrir página de la Universidad Complutense de Madrid">Universidad Complutense de Madrid</a>.
+            </p>
+            <p>
+                Ir a la página de 
+                <a href="contacto.html" aria-label="Ir a la página de contacto">Contacto</a>.
+            </p>
+            <p>
+                Ir directamente a la sección de <a href="#vehiculos" aria-label="Enlace interno a la sección de vehículos">Vehículos</a>.
+            </p>
+        </section>
+
+        <!-- Imágenes -->
+        <section>
+            <h3>Imágenes</h3>
+            <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla6.png" 
+                 alt="Coche eléctrico Tesla blanco de 5 plazas" width="600">
+            <p>Miniatura:</p>
+            <a href="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" target="_blank" aria-label="Abrir imagen en tamaño completo del Tesla rojo">
+                <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" 
+                     alt="Miniatura de coche eléctrico Tesla rojo" width="150">
+            </a>
+        </section>
+
+        <!-- Sección Vehículos -->
+        <section id="vehiculos">
+            <h3>Tabla de vehículos disponibles</h3>
+            <table> 
+                <caption>Vehículos disponibles en la plataforma: matrícula, marca y autonomía en kilómetros</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Autonomía (km)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1234-ABC</td>
+                        <td>Tesla 1</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>5678-DEF</td>
+                        <td>Tesla 2</td>
+                        <td>270</td>
+                    </tr>
+                    <tr>
+                        <td>9101-GHI</td>
+                        <td>Tesla 3</td>
+                        <td>416</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección Reservas -->
+        <section id="reservas"> 
+            <h3>Formulario de reserva</h3>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required aria-label="Introduce tu nombre"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="correo" id="email" required aria-label="Introduce tu correo electrónico"><br><br>
+
+                <label for="vehiculos-select">Vehículos disponibles:</label>
+                <select name="vehiculos" id="vehiculos-select" required>
+                    <option value="" disabled selected>-- Selecciona un vehículo --</option>
+                    <option value="tesla1">Tesla</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="bmw">BMW</option>
+                </select>
+
+
+                <label for="fecha_inicio">Fecha inicio:</label>
+                <input type="date" name="fecha_inicio" id="fecha_inicio" required aria-label="Selecciona la fecha de inicio"><br><br>
+
+                <label for="hora_inicio">Hora inicio:</label>
+                <input type="time" name="hora_inicio" id="hora_inicio" required aria-label="Selecciona la hora de inicio"><br><br>
+
+                <label for="fecha_fin">Fecha fin:</label>
+                <input type="date" name="fecha_fin" id="fecha_fin" required aria-label="Selecciona la fecha de fin"><br><br>
+
+                <label for="hora_fin">Hora fin:</label>
+                <input type="time" name="hora_fin" id="hora_fin" required aria-label="Selecciona la hora de fin"><br><br>
+
+                <label for="condiciones">Acepto condiciones:</label>
+                <input type="checkbox" name="condiciones" id="condiciones" required aria-label="Aceptar condiciones de uso"><br><br>
+
+                <input type="submit" value="Enviar" aria-label="Enviar formulario de reserva">
+                <input type="reset" value="Limpiar" aria-label="Limpiar formulario">
+            </form>
+        </section>
+
+        <!-- Iframe -->
+        <section>
+            <h2>Iframe</h2>
             <iframe src="https://www.youtube.com/watch?v=FG3zkj6OEEo" 
                     name="iframe_a" 
                     height="400" 
                     width="800" 
-                    title="ejemplo Iframe">
+                    title="Video explicativo sobre gestión de flotas de vehículos eléctricos">
             </iframe>
-
             <p>
-            <a href="https://ucm.es" target="iframe_a">Web UCM</a>
+                <a href="https://ucm.es" target="iframe_a" aria-label="Abrir web de la Universidad Complutense dentro del iframe">Web UCM</a>
             </p>
+        </section>
+    </main>
 
-        <footer>
-            <p>Todos los derechos reservados &copy; 2025.</p>
-        </footer>
-    </body>     
+    <!-- Pie de página -->
+    <footer>
+        <p>Todos los derechos reservados &copy; 2025. Autor: Álvaro Adrada y Diego Fernández | Contacto: aadrada@ucm.com difern06@ucm.es </p>
+        <p><span lang="en">All rights reserved</span> | <span lang="fr">Tous droits réservés</span></p>
+        <p>
+    <a href="https://validator.w3.org/check?uri=referer">
+        <img src="https://www.w3.org/Icons/valid-html401" alt="HTML válido según W3C" height="31" width="88">
+    </a>
+</p>
+
+    </footer>
+
+</body>     
 </html>
