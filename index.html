@@ -8,8 +8,23 @@
     <body>
         <h1>Gestión de Flota de Vehículos Eléctricos</h1>
             <h2>Plataforma de movilidad sostenible</h2>
-            <p>Bienvenido a nuestra plataforma de gestión de flota de <strong>vehículos eléctricos</strong>. Aquí podrás monitorear y administrar tu flota de manera eficiente y sostenible.</p>
-            <p>Los vehículos eléctricos son una parte fundamental de la <em>movilidad sostenible</em>. Con nuestra plataforma, podrás optimizar el uso de tus vehículos, reducir costos operativos y minimizar el impacto ambiental.</p>
+            <p>
+                Bienvenido a la <strong>plataforma de gestión de flotas de vehículos eléctricos</strong>, 
+                una solución diseñada para modernizar la movilidad en las empresas y hacerla más eficiente.
+            </p>
+            <p>
+                Gracias a esta aplicación, los empleados pueden <em>consultar la disponibilidad de vehículos</em>, 
+                realizar reservas rápidas con fecha y hora, y acceder fácilmente a su histórico de viajes.
+            </p>
+            <p>
+                Los administradores disponen de herramientas para la <strong>gestión de concesionarios, usuarios y vehículos</strong>, 
+                así como estadísticas de uso que ayudan a tomar mejores decisiones.
+            </p>
+            <p>
+                Nuestro compromiso es fomentar el uso de <strong>energías limpias</strong> y ofrecer una experiencia accesible, 
+                adaptada a las necesidades de todos los usuarios mediante opciones de contraste, tamaño de letra y atajos de teclado.
+            </p>
+            <p>El precio de la suscripción a esta web es de 10&euro; mensuales.</p>
                 <h3>Listas</h3>
                     <h4>Beneficios de los vehículos eléctricos</h4>
                         <ol>
@@ -32,6 +47,7 @@
                             <dt>JSON</dt>
                             <dd>Formato de intercambio de datos ligero y fácil de leer.</dd>
                         </dl>
+                
                 <h3>Enlaces</h3>
                     <p>
                         Visita la página de la 
@@ -42,21 +58,95 @@
                         <a href="contacto.html">Contacto</a>.
                     </p>
                     <p>
-                        <a href="#vehiculos">Ir a la sección de vehículos</a>
+                        Ir directamente a la sección de <a href="#vehiculos">Vehículos</a>.
                     </p>
+
                 <h3>Imágenes</h3>
-                    <img src="recurso-imagenes/vehiculos/tesla2.png" alt="Vehículo eléctrico Tesla Model 2" width="400">
-                    <a href="recurso-imagenes/vehiculos/tesla2.png" target="_blank">
-                    <img src="recurso-imagenes/vehiculos/tesla2.png" alt="Miniatura Tesla Model 2" width="100">
+                    <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla6.png" 
+                    alt="Vehículo eléctrico Tesla" width="600">
+                    <p>Miniatura:</p>
+
+                    <a href="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" target="_blank">
+                    <img src="recurso-imagenes/recurso-imagenes/vehiculos/tesla5.png" 
+                        alt="Vehículo Tesla" 
+                        width="150">
                     </a>
-            <h2>
-                Sección de vehículos
-                <a id="vehiculos"></a>
-                <h3>
-                    <p>ejemplo entidades HTML : &euro; &copy; </p>
-                </h3>
-            </h2>
-                
-    </body>
-        
+
+                <section id = "vehiculos">
+                    <h3>Tabla de vehículos disponibles</h3>
+                        <table border="1">
+                            <caption>Vehículos disponibles</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Matrícula</th>
+                                    <th scope="col">Marca</th>
+                                    <th scope="col">Autonomía (km)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1234-ABC</td>
+                                    <td>Tesla 1</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>5678-DEF</td>
+                                    <td>Tesla 2</td>
+                                    <td>270</td>
+                                </tr>
+                                <tr>
+                                    <td>9101-GHI</td>
+                                    <td>Tesla 3</td>
+                                    <td>416</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </section>
+
+        <section id="reservas"> 
+            <h3>Formulario de reserva</h3>
+                        <form>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" required><br><br>
+                            <label for="email"></label>Email:</label>
+                            <input type="email" name="correo" id="email" required><br><br>
+                            <label for="vehiculos">Vehículos disponibles:</label>
+                            <select name="vehiculos" id="vehiculos" required>
+                                <option value="tesla1">Tesla</option>
+                                <option value="tesla2">Mercedes</option>
+                                <option value="tesla3">BMW</option>
+                            </select><br><br>
+                            <label for="fecha_inicio">Fecha inicio:</label>
+                            <input type="date" name="fecha_inicio" id="fecha_inicio" required><br><br>
+                            <label for="hora_inicio">Hora inicio:</label>
+                            <input type="time" name="hora_inicio" id="hora_inicio" required><br><br>
+                            <label for="fecha_fin">Fecha fin:</label>
+                            <input type="date" name="fecha_fin" id="fecha_fin" required><br><br>
+                            <label for="hora_fin">Hora fin:</label>
+                            <input type="time" name="hora_fin" id="hora_fin" required><br><br>
+                            <label for="condiciones">Acepto condiciones:</label>
+                            <input type="checkbox" name="condiciones" id="condiciones" required><br><br>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar">
+                        </form>
+
+        </section>
+
+        <h2>Iframe</h2>
+
+            <iframe src="https://www.youtube.com/watch?v=FG3zkj6OEEo" 
+                    name="iframe_a" 
+                    height="400" 
+                    width="800" 
+                    title="ejemplo Iframe">
+            </iframe>
+
+            <p>
+            <a href="https://ucm.es" target="iframe_a">Web UCM</a>
+            </p>
+
+        <footer>
+            <p>Todos los derechos reservados &copy; 2025.</p>
+        </footer>
+    </body>     
 </html>
