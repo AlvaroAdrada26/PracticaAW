@@ -71,7 +71,11 @@ a:hover {
   margin: 20px auto;
   width: 1000px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-color: #203a93;
+  border-width: 5px;
+  border-style: solid;
+  background-color: turquoise;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
   transition: transform 0.3s ease;
 }
 
@@ -87,4 +91,163 @@ footer {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 40px;
+}
+
+/* === Tabla de Vehículos === */
+.vehiculos-table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+/* Cabecera */
+.vehiculos-table thead {
+  background-color: #203a93;
+  color: white;
+}
+
+.table-header {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #ffcc00;
+}
+
+/* Celdas */
+.table-cell {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Filas alternas con color sutil */
+.vehiculos-table tbody tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+/* Efecto hover en las filas */
+.vehiculos-table tbody tr:hover {
+  background-color: #dce8ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Bordes redondeados en la tabla */
+.vehiculos-table th:first-child {
+  border-top-left-radius: 10px;
+}
+.vehiculos-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Resalta la primera columna (matrícula) ligeramente */
+.vehiculos-table td:first-child {
+  font-weight: 600;
+  color: #203a93;
+}
+
+/* === Formulario de Reservas — Versión con más espacio === */
+.reservas {
+  background-color: #ffffff;
+  width: 75%;
+  margin: 50px auto;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reserva-fieldset {
+  border: 2.5px solid #203a93;
+  border-radius: 10px;
+  padding: 30px 40px;
+  background-color: #f7fbff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* más espacio entre los campos */
+}
+
+.form-legend {
+  font-size: 22px;
+  font-weight: bold;
+  color: #203a93;
+  margin-bottom: 10px;
+}
+
+/* Agrupación más limpia */
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Campos más anchos y con espacio vertical */
+.form-input,
+.form-select {
+  padding: 12px;
+  border: 2px solid #203a93;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+
+/* Espacio extra entre etiquetas y campos */
+.form-label {
+  margin-top: 10px;
+  color: #203a93;
+  font-weight: bold;
+}
+
+/* Checkbox más aireado */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Botones centrados y separados */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.form-button {
+  padding: 12px 25px;
+  background-color: #203a93;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:hover {
+  background-color: #ffcc00;
+  color: #203a93;
+  transform: scale(1.05);
+}
+
+.form-button.limpiar {
+  background-color: #999;
+}
+
+.form-button.limpiar:hover {
+  background-color: #666;
+  color: #fff;
 }
