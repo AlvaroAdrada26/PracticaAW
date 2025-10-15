@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Tu Nombre">
-        <meta name="description" content="Página de contacto para la empresa de alquiler de vehículos eléctricos.">
-        <title>Contacto - Alquiler de Vehículos Eléctricos</title>
-    </head>
-    <body>
-        <header>
-            <h1>Contacto</h1>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required> <br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu Nombre">
+    <meta name="description" content="Página de contacto de la Plataforma de Gestión de Flota de Vehículos Eléctricos.">
+    <title>Contacto - Plataforma de Flota Eléctrica</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
 
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button><br><br>
-            </form>
-            <a href="index.html">Volver a la página principal</a>
-        </header>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1 class="title">Flota de Vehículos Eléctricos</h1>
+      <h2 class="subtitle">Formulario de Contacto</h2>
+    </header>
 
-        <main>
-            
+    <!-- Contenido principal -->
+    <main>
+      <section class="reservas">
+        <h2 class="subtitle">Contáctanos</h2>
+
+        <form class="reserva-form" action="#" method="post">
+          <fieldset class="reserva-fieldset">
+            <legend class="form-legend">Envíanos tu mensaje</legend>
+
+            <!-- Nombre -->
+            <label for="nombre" class="form-label">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required>
+
+            <!-- Email -->
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="nombre@ucm.es" required>
+
+            <!-- Mensaje -->
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" class="form-input" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <!-- Botones -->
+            <div class="form-buttons">
+              <button type="submit" class="form-button">Enviar mensaje</button>
+              <button type="reset" class="form-button limpiar">Limpiar</button>
+            </div>
+
+          </fieldset>
+        </form>
+
+        <div style="text-align:center; margin-top:25px;">
+          <a href="index.html" class="textoIntro">← Volver a la página principal</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p class="textoIntro">Derechos reservados &copy; 2025 — Plataforma de Gestión de Flota</p>
+    </footer>
+  </body>
+</html>

@@ -74,7 +74,7 @@ a:hover {
   border-color: #203a93;
   border-width: 5px;
   border-style: solid;
-  background-color: turquoise;
+  background-color: lightblue;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
   transition: transform 0.3s ease;
 }
@@ -250,4 +250,93 @@ footer {
 .form-button.limpiar:hover {
   background-color: #666;
   color: #fff;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* === Barra de Navegación === */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  background-color: white;
+}
+
+/* Barra principal */
+.navbar {
+  background-color: #1a2c7a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  position: sticky;   /* se mantiene fija arriba al hacer scroll */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+  padding: 12px 0;
+}
+
+/* Enlaces del menú */
+.nav-list a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Selector de idioma */
+.idioma-select {
+  background-color: #203a93;
+  color: white;
+  border: 2px solid #ffcc00;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.idioma-select:hover {
+  background-color: #ffcc00;
+  color: #203a93;
+}
+
+/* Botón de contraste */
+.contraste-btn {
+  background-color: #ffcc00;
+  color: #203a93;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contraste-btn:hover {
+  background-color: white;
+  color: #203a93;
 }
