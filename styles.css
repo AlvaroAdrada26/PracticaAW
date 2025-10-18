@@ -1,0 +1,67 @@
+body {
+  background-color: #f0f8ff;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================ */
+/* ========== ENCABEZADO ========== */
+/* ================================ */
+header {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del logo y título */
+.header-container {
+  display: flex;
+  align-items: center;      /* centra verticalmente */
+  justify-content: center;  /* centra el título */
+  position: relative;       /* permite posicionar el logo fácilmente */
+}
+
+/* Logo alineado a la izquierda */
+.logo {
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: white;
+
+  border: 2px solid #ffcc00;
+  
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Título centrado */
+.title {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+/* ================================ */
+/* ======== FIN ENCABEZADO ======== */
+/* ================================ */
+
+
+footer {
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  height: 70px;
+}
+
